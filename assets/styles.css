@@ -104,6 +104,10 @@ header{
     position: relative;
     width: 30px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     border: none;
     border-radius: 50%;
     box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.6), 4px 4px 4px rgba(0, 0, 0, 0.2);
@@ -206,3 +210,4 @@ footer{
         font-size: .8rem;
     }
 }
+
