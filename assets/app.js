@@ -1,15 +1,20 @@
 //  Theme logic
 const theme = document.querySelector("#theme");
+const themeIcon = document.querySelector("#theme-icon");
 let dark = true;
 theme.addEventListener("click", () => {
     // Theme mode change logic here
     if(dark == true){
         document.body.classList.remove("dark");
         document.body.classList.add("light");
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
         dark = false;
     }else{
         document.body.classList.remove("light");
         document.body.classList.add("dark");
+        themeIcon.classList.remove("fa-sun");
+        themeIcon.classList.add("fa-moon");
         dark = true;
     }
 });
