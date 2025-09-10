@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --c1: #f0f0f0;
+    --c2: #00032c;
+    --c3: #000a90;
+    --c3-alt: #000a90a7;
+    --c4: #004f9e;
+    --c4-alt: #004f9eb2;
+    --c5: #65b2ff;
+    --c6: #0573e0;
+    --c6-alt: #4093e6;
+    --w1: #ffffff72;
+    --b1: #00000082;
+}
+
+/*=============================== THEME COLORS ===============================*/
+.light{
+    color: var(--c2);
+    background-color: var(--c1);
+    a{
+        color: var(--c2);
+    }
+    header{
+        background: linear-gradient(120deg, var(--c3-alt), var(--c4-alt));
+    }
+    .btn{
+        color: var(--c2);
+        background-color: var(--c6-alt);
+    }
+    footer{
+        background: linear-gradient(120deg, var(--c4-alt), var(--c3-alt));
+    }
+    
+}
+.dark{
+    color: var(--c1);
+    background-color: var(--c2);
+    a{
+        color: var(--c1);
+    }
+    header{
+        background: linear-gradient(120deg, var(--c3), var(--c4));
+    }
+    .btn{
+        color: var(--c1);
+        background-color: var(--c6);
+    }
+    footer{
+        background: linear-gradient(120deg, var(--c4), var(--c3));
+    }
+}
+/*=============================== STYLE ===============================*/
+body{
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-family: "Poppins","sans-serif";
+    transition: all 0.3s ease-in-out;
+    transition-behavior: smooth;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 2vw 2vw;
+    padding: 10px 30px;
+}
+#logo{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    img{
+        width: auto;
+        height: 40px;
+        border-radius: 5px;
+    }
+    h1{
+        font-size: 32px;
+    }
+}
+#theme{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.6), 4px 4px 4px rgba(0, 0, 0, 0.2);
+    background: var(--c1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#theme:active {
+    transform: scale(1.1);
+    box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.2), 4px 4px 4px rgba(0, 0, 0, 0.3);
+    background: var(--c5);
+    transition: all 0.3s ease-in-out;
+}
+
+
+main{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    padding: 30px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hide{
+    display: none;
+}
+#box-container{
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    border-radius: 5px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: 2px solid var(--c4-alt);
+    box-shadow: inset 2px 2px 4px var(--c1), 2px 2px 5px var(--b1);
+    font-size: 4rem;
+    background-color: var(--c5);
+}
+#msg{
+    font-size: 2rem;
+    font-weight: 200;
+    span{
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+}
+.btn{
+    margin-top: 5vh;
+    border: 2px solid var(--c5);
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: inset 2px 2px 4px var(--c1), 2px 2px 4px var(--b1);
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover{
+        border-color: var(--c4-alt);
+        transform: translateY(0px);
+    }
+    &:active{
+        border-color: var(--c2);
+    }
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw 2vw 0 0;
+    padding: 10px 30px;
+    background: linear-gradient(120deg, var(--c4), var(--c3));
+
+    a:hover{
+        color: var(--c5);
+    }
+}
+
+
+/*===================== Mobile-View ===================== */
+@media screen and (max-width: 425px){
+    #logo h1{
+        font-size: 24px;
+    }
+    footer p{
+        font-size: .8rem;
+    }
+}

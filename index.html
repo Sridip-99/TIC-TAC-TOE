@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TIC TAC TOE</title>
+        <meta name="description" content="A tic-tac-toe game made using HTML5 CSS3 & Js">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="assets/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    </head>
+    <body class="dark">
+        <header>
+            <div id="logo">
+                <img src="assets/img/logo.jpg" alt="logo">
+                <h1>TIC TAC TOE</h1>
+            </div>
+
+            <button  id="theme"></button>
+        </header>
+
+        <main>
+
+            <div class="container hide" id="container1">
+                <div id="msg">Winner is <span id="winner"></span></div>
+                <button class="btn" id="new-btn">New Game</button>
+            </div>
+
+            <div class="container " id="container2">
+                <div id="box-container">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+
+                <button class="btn" id="rst-btn">Reset Game</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>A simple Tic-Tac-Toe game made by <a href="https://sridiptah99.netlify.app" target="_blank" rel="noopener noreferrer">this guy</a></p>
+        </footer>
+        
+        <script src="assets/app.js" async defer></script>
+    </body>
+</html>
