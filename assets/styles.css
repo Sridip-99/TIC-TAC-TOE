@@ -108,6 +108,8 @@ header{
     border-radius: 50%;
     box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.6), 4px 4px 4px rgba(0, 0, 0, 0.2);
     background: var(--c1);
+    font-family: "Poppins","sans-serif";
+    font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -151,7 +153,6 @@ main{
     font-size: 4rem;
     font-weight: 600;
     background-color: var(--c5);
-    cursor: pointer;
 }
 #msg{
     font-size: 2rem;
@@ -170,7 +171,7 @@ main{
     font-family: "Poppins","sans-serif";
     font-size: 1.2rem;
     transition: all 0.3s ease-in-out;
-    cursor: pointer;
+    
     &:hover{
         border-color: var(--c4-alt);
         transform: translateY(0px);
@@ -204,6 +205,4 @@ footer{
     footer p{
         font-size: .8rem;
     }
-
 }
-
