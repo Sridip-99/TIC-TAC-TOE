@@ -147,7 +147,9 @@ main{
     border-radius: 5px;
     border: 2px solid var(--c4-alt);
     box-shadow: inset 2px 2px 4px var(--c1), 2px 2px 5px var(--b1);
+    font-family: "Poppins","sans-serif";
     font-size: 4rem;
+    font-weight: 600;
     background-color: var(--c5);
     cursor: pointer;
 }
@@ -165,6 +167,7 @@ main{
     border-radius: 50px;
     padding: 10px 20px;
     box-shadow: inset 2px 2px 4px var(--c1), 2px 2px 4px var(--b1);
+    font-family: "Poppins","sans-serif";
     font-size: 1.2rem;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -203,3 +206,4 @@ footer{
     }
 
 }
+
